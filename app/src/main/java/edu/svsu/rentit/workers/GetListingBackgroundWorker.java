@@ -77,10 +77,11 @@ public class GetListingBackgroundWorker extends AsyncTask<String, String, String
                 String price = jb.getString("price");
                 double lat1 = jb.getDouble("lat");
                 double lon1 = jb.getDouble("lon");
-
+                String review = jb.getString("review");
+                String reviewCount = jb.getString("reviewCount");
                 double distance = distance(lat1,lon1,43.549014678840194,-83.95262718200684);
 
-                listings.add(new Listing(userId, username, title, description,  "", distance, "", "$" + price + ".00"));
+                listings.add(new Listing(userId, username, title, description,  "", distance, "", "$" + price, review, reviewCount));
             }
 
             // Send listing results back to MainActivity

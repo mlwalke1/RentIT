@@ -18,6 +18,7 @@ public class User implements Serializable {
     private String City;
     private String State;
     private String Zipcode;
+    private String Review;
 
     private String Bio;
 
@@ -33,6 +34,7 @@ public class User implements Serializable {
             State = userJSONObject.getString("state");
             Zipcode = userJSONObject.getString("zipcode");
             Bio = userJSONObject.getString( "bio" );
+            Review = userJSONObject.getString( "review" );
 
         } catch (JSONException ex) {
             Log.d("DEBUG", ex.toString());
@@ -62,4 +64,6 @@ public class User implements Serializable {
     public String getZipcode() { return Zipcode; }
 
     public String getBio() { return Bio; }
+
+    public String getReview(){ return Review;}
 }

@@ -35,6 +35,9 @@ public class ViewListingActivity extends AppCompatActivity {
         TextView txt_Description = findViewById(R.id.textView_description);
         txt_Description.setText(currentListing.getDescription());
 
+        TextView review_text = findViewById(R.id.ratingText);
+        review_text.setText(currentListing.getReview());
+
 
 
 

@@ -14,19 +14,26 @@ public class Listing implements Serializable {
     private String contact;
     private String price;
     private double distance;
+    private String review;
+    private String reviewCount;
 
-    public Listing(int newUserId, String newTitle, String newDescription, String newAddress, double newDistance,
-                   String newContact, String newPrice) {
+
+
+    public Listing(int newUserId, String newUsername, String newTitle, String newDescription, String newAddress, double newDistance,
+                   String newContact, String newPrice, String newReview, String newReviewCount) {
 
         userId = newUserId;
+        username = newUsername;
         title = newTitle;
         description = newDescription;
         address = newAddress;
         contact = newContact;
         price = newPrice;
         distance = newDistance;
-    }
+        review = newReview;
+        reviewCount = newReviewCount;
 
+    }
     public Listing(int newUserId, String newUsername, String newTitle, String newDescription, String newAddress, double newDistance,
                    String newContact, String newPrice) {
 
@@ -38,6 +45,8 @@ public class Listing implements Serializable {
         contact = newContact;
         price = newPrice;
         distance = newDistance;
+
+
     }
 
     public int getUserId() { return userId; }
@@ -63,5 +72,7 @@ public class Listing implements Serializable {
         return price;
     }
     public double getDistance() { return distance; }
+    public String getReview(){ return review;}
+    public String getReviewCount(){ return reviewCount;}
 
 }

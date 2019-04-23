@@ -35,22 +35,29 @@ public class CreateListingActivity extends AppCompatActivity {
 
                 EditText etTitle = findViewById(R.id.txt_Title);
                 String title = etTitle.getEditableText().toString();
+
                 EditText etDescription = findViewById(R.id.txt_Description);
                 String description = etDescription.getEditableText().toString();
+
                 // Address info
                 EditText etAddress = findViewById(R.id.txt_Address);
                 String address = etAddress.getEditableText().toString();
+
                 EditText etCity = findViewById(R.id.txt_City);
                 String city = etCity.getEditableText().toString();
+
                 Spinner etState = findViewById(R.id.spinner_State);
                 String state = etState.getSelectedItem().toString();
+
                 EditText etZip = findViewById(R.id.txt_Zip);
                 String zip = etZip.getEditableText().toString();
+
                 Spinner etCountry = findViewById(R.id.spinner_Country);
                 String country = etCountry.getSelectedItem().toString();
 
                 EditText etContact = findViewById(R.id.txt_Contact);
                 String contact = etContact.getEditableText().toString();
+
                 EditText etPrice = findViewById(R.id.txt_Price);
                 String price = etPrice.getEditableText().toString();
 
